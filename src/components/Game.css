@@ -1,0 +1,46 @@
+.game {
+    border: solid black 1px;
+    width: 50%;
+    margin: auto;
+    height: 380px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (min-width: 640px) {
+    .game{
+        width: 33%;
+    }
+}
+
+.feedback{
+    background-color: rgb(197, 44, 66);
+    height: 25%;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feedback p {
+    color: white;
+    text-align: center;
+    
+}
+.guess-container{
+    background-color: rgb(50, 58, 59); 
+    height: 50%;
+}
+.guess-list{
+    background-color: rgb(17, 158, 161);
+    height: 25%;
+    border-radius: 0px 0px 5px 5px;
+}
+.guess-list ul{
+    display: flex;
+    list-style: none;
+}
+.guess-list li{
+    padding: 5px;
+}
