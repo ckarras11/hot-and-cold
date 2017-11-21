@@ -7,7 +7,7 @@ export default function GameForm(props){
     <section className='game-form-container'>
         <form className='game-form'>
             <input value={props.value} onChange={props.onChange} type='number' placeholder='Enter your Guess' />
-            <button onClick={props.onClick} className='submit' disabled={props.isEnabled} >Submit</button>
+            <button onClick={props.onClick} className={props.classes} disabled={props.disabled} >Submit</button>
         </form>
         <p>Guess: {props.guessNumber}</p>
     </section>
