@@ -5,22 +5,28 @@ import Game from './Game'
 export default class App extends React.Component{
   constructor(props) {
     super(props);
-
+    this.state = {
+      restart: false
+    }
+  }
+  restartGame() {
+    this.setState({
+      restart: true
+    });
   }
   render() {
     return (
       <section className="app">
         <header className='title-container'>
           <div className='nav-container'>
-            <h2>What?</h2>
-            <h2>+ New Game</h2>
+            <a onClick={this.restartGame.bind(this)}>+ New Game</a>
           </div>
           <div>
             <h1>HOT or COLD </h1>
           </div>    
         </header>
         <section>
-          <Game />
+          <Game restart={this.state.restart}/>
         </section>
       </section>
     )

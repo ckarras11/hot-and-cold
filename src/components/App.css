@@ -6,9 +6,11 @@
 }
 .nav-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
 }
-.nav-container h2{
+.nav-container a{
   padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
 }
